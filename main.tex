@@ -1,0 +1,189 @@
+% !TEX root = main.tex
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\usepackage[margin=0.8cm]{geometry} % Reduced margin from 0.8cm to 0.6cm
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.2in} % Increased from -0.15in to -0.2in
+\addtolength{\textwidth}{0.4in} % Increased from 0.3in to 0.4in
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{0pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+% Modified itemize environments with reduced left margin
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}\vspace{0pt}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.2in]} % Reduced from default
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Large \scshape Saif Hatem} \\[2mm]
+    \footnotesize \raisebox{-0.1\height}
+    \faPhone\ \underline{+20-1156258438} ~ 
+    {\faEnvelope\  \underline{saifhatem02@gmail.com}} ~ 
+    {\faLinkedin\ \underline{\href{https://www.linkedin.com/in/saifhatem/}{linkedin.com/in/saifhatem}}  ~
+    {\faGithub\ \underline{\href{https://github.com/Trimbex}{github.com/Trimbex}} ~
+    {\faMapMarker\ \underline{Cairo, Egypt}}
+    \vspace{-8pt}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education} \\[1mm]
+  \resumeSubHeadingListStart
+      \resumeSubheading
+      {Ain Shams Univeristy}{Expected Graduation: June 2026}
+      {Bachelor of Computer Engineering}{Cairo, Egypt}
+    \resumeSubheading
+      {University of East London}{}
+      {Bachelor of Computer Engineering - Dual Degree Program}{London, United Kingdom}
+  \resumeSubHeadingListEnd
+    \resumeItemListStart
+        % \resumeItem {Golden Key Honours Scholar | \textbf{GPA: 3.78}}
+        \vspace{-9pt}
+        \resumeItem {\textbf{Relevant Coursework}: Data Structures and Algorithms, Operating Systems, Data Mining and Business Intelligence,  Computer Networks, Distributed Computing, Advanced Software Engineering, Artificial Intelligence, Software Testing and Automation, Advanced Computer Programming, Database Systems and Administration, Computer Vision, Agile Principles  }
+    \resumeItemListEnd
+    \vspace{-12pt}
+
+%-----------PROJECTS-----------
+\section{Projects} 
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+            {\textbf{{Funds Haven}} \emph{\href{}{}{  }\href{}{}}}{Decemeber 2024 - Present}
+            \\[5mm]
+          \resumeItemListStart
+            \resumeItem{Developing an \textbf{AI-powered financial management system} using Next.js and TypeScript, enabling detailed transaction tracking and \textbf{automated analysis}, resulting in \textbf{a 15\% improvement in users' ability to categorize their spending accurately}.}
+            \resumeItem{Architected a PostgreSQL database with \textbf{Drizzle ORM} to manage complex financial relationships, reducing query time by \textbf{65\%}}    
+            \resumeItem{Created a flexible and \textbf{smart categorization system} for financial transactions \textbf{using NLP}, integrated with budget tracking capabilities, allowing users to monitor spending across multiple accounts and visualize financial patterns.}
+            \resumeItem{Architected and built robust \textbf{RESTful API} endpoints utilizing Node.js and Express, implementing comprehensive error handling and rigorous data validation to ensure data integrity and system stability, resulting in a reduction of API failure rates to less than \textbf{2\%} and a significant improvement in overall system reliability and user experience.}
+            
+          \resumeItemListEnd
+ \vspace{-20pt}
+ \resumeProjectHeading
+            {\textbf{{WebCrawl}} $|$ \emph{\href{https://github.com/Trimbex/Distributed-Web-Crawling-System}{Repo \faLink}}}{April 2025 - May 2025}
+            \\[5mm]
+          \resumeItemListStart
+            \resumeItem{Pioneered a \textbf{distributed web crawling ecosystem}, architecting and implementing a \textbf{scalable} solution leveraging \textbf{Python} for core logic, \textbf{AWS EC2} for distributed processing, and \textbf{SQS} for robust message queuing, resulting in an impressive \textbf{300\% performance boost} in crawl speed and efficiency compared to traditional single-node architectures.}
+            \resumeItem{Engineered a \textbf{high-performance} content discovery and indexing pipeline, custom-built with \textbf{Whoosh} and \textbf{AWS S3}, enabling lightning-fast sub-second query responses across a massive corpus of over \textbf{500,000+} web documents.}
+            \resumeItem{Orchestrated a sophisticated multi-node AWS EC2 deployment with dynamic auto-scaling capabilities, effortlessly handling peak traffic of \textbf{10,000+} URLs per minute with zero performance degradation.}
+            \resumeItem{Led the development of an enterprise-grade fault-tolerance framework with sophisticated heartbeat monitoring and automatic task recovery, ensuring \textbf{99.8\%} system reliability during mission-critical operations.}
+          \resumeItemListEnd
+ \vspace{-17pt}
+ \resumeProjectHeading
+{\textbf{{Barcode }} $|$ \emph{\href{https://premierzone.vercel.app/}{Website}{ $|$ }\href{https://github.com/Erik-Cupsa/PLWebsite}{Source Code}}}{Pandas $|$ Scikit-Learn $|$ Python}
+\\[5mm]
+\resumeItemListStart
+\resumeItem{Created a model to predict matches, integrating \textbf{data scraping} with \textbf{pandas} and \textbf{machine learning} with \textbf{scikit-learn}}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-28pt}
+%-----------LEADERSHIP-----------
+\section{Leadership} 
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+                   \resumeProjectHeading
+            {\textbf{{SWErikCodes}} $|$\emph{{\href{https://www.tiktok.com/@swerikcodes?lang=en}{ TikTok $|$}\href{https://www.youtube.com/channel/UCgKFOz_KrMbmypWrawtzDQg}{ YouTube $|$}\href{https://www.instagram.com/swerikcodes/}{ Instagram}}}}{Jun 2023 -- Present}
+            \\[5mm]
+          \resumeItemListStart
+            \resumeItem{Created educational coding content for \textbf{75,000+} developers, with \textbf{4,200,000+} impressions per month}
+            \resumeItem{Produced coding tutorials on advanced topics such as \textbf{data structures}, \textbf{algorithms}, and \textbf{software design principles}}
+          \resumeItemListEnd
+          \resumeSubHeadingListEnd
+ \vspace{-12pt}
+  %-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.05in, label={}] % Reduced from 0.15in to 0.05in
+    \small{\item{   
+     \textbf{Languages}{: Python, Java, SQL, HTML5, CSS, JavaScript, Go, C, VHDL} \\[1mm]
+     \textbf{Developer Tools}{: AWS, Postman, PowerBI, Git, Azure, Docker, Jira} \\[1mm]
+     \textbf{Libraries/Frameworks}{: Spring Boot, ReactJS, PostgreSQL, NextJS, VueJS, NodeJS} \\ [1mm]
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+ \vspace{3pt}
+\vspace{10pt}
+
+\vspace{-15pt}
+
+\end{document}
